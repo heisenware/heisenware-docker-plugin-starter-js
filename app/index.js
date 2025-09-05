@@ -1,6 +1,5 @@
-const { VrpcAgent, VrpcAdapter } = require('vrpc')
+const { VrpcAgent, VrpcAdapter, VrpcPersistor } = require('vrpc')
 const pino = require('pino')
-const Persistor = require('./src/Persistor')
 const { domain, username, password, broker } = require('./config')
 const log = pino({ timestamp: pino.stdTimeFunctions.isoTime }).child({
   module: 'index'
@@ -31,7 +30,7 @@ async function main () {
   await vrpcAgent.serve()
 
   // Create persistor
-  const persistor = new Persistor({
+  const persistor = new VrpcPersistor({
     log,
     agentInstance: vrpcAgent
   })
