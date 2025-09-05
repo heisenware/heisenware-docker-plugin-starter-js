@@ -1,6 +1,6 @@
-# heisenware-docker-plugin-starter-js
+# heisenware-docker-extension-starter-js
 
-Use this as template to have a immediately working Docker-based plugin project structure.
+Use this as template to have a immediately working docker-based extension project structure.
 
 ## Adding custom code
 
@@ -9,7 +9,7 @@ You must add your class in the `src` directory and register it in the
 
 It is possible to register not only one, but any number of classes.
 
-## Building the plugin
+## Building the extension
 
 1. In the `app` folder run:
 
@@ -31,9 +31,9 @@ docker push myusername/myimage:1.0.0
 
 Done.
 
-## Running the plugin
+## Running the extension
 
-There are two options of running the plugin:
+There are two options of running the extension:
 
 ### Start within the platform (running in cloud)
 

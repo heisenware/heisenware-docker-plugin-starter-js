@@ -8,7 +8,7 @@ const log = pino({ timestamp: pino.stdTimeFunctions.isoTime }).child({
 
 // ----------------------- ONLY EDIT HERE --------------------------------------
 
-// Define your agent (= plugin) name here
+// Define your agent (= extension) name here
 const agent = 'My Greeter Agent'
 
 // Import and register all classes you want to make available for low-coding
